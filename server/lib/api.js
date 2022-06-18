@@ -11,6 +11,6 @@ const cors_1 = __importDefault(require("cors"));
 exports.app.use(cors_1.default({ origin: true }));
 exports.app.post('/test', (req, res) => {
     const amount = req.body.amout;
-    res.status(200).send({ with_tax: amount * 7 });
+    res.status(200).send({ 'with_tax': amount * 7 });
 });
 //# sourceMappingURL=api.js.map
