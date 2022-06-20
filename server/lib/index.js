@@ -12,7 +12,7 @@ if (process.env.NODE_ENV !== "production") {
 // Init Stripe
 const stripe_1 = __importDefault(require("stripe"));
 exports.stripe = new stripe_1.default(process.env.STRIPE_SECERT, {
-    apiVersion: '2020-03-02',
+    apiVersion: '2020-08-27',
 });
 // import app
 const api_1 = require("./api");

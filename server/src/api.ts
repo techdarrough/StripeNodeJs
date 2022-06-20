@@ -33,7 +33,11 @@ app.post('/test', (req: Request, res: Response) =>{
   app.post(
     '/checkouts/',
     runAsync( async ({ body }: Request, res: Response) => {
-      res.send( await createStripeCheckoutSession(body.line_items));
+      res.send( 
+        
+        await createStripeCheckoutSession(body.line_items)
+        
+        );
     })
   );
-}
+
